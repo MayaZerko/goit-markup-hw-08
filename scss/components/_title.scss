@@ -1,0 +1,17 @@
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.portfolio-card__title {
+  @extend .section__title;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}

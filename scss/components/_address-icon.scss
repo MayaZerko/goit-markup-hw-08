@@ -1,0 +1,16 @@
+.address-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-icon:hover {
+  fill: var(--accent-color);
+}
+
+.contact-link:hover .address-icon,
+.contact-link:focus .header-mail,
+.contact-link:hover .header-tel,
+.contact-link:focus .header-tel {
+  fill: var(--accent-color);
+}

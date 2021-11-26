@@ -1,0 +1,31 @@
+.our-work__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-work__title {
+  text-align: center;
+}
+
+.our-work__item {
+  position: relative;
+}
+
+.our-work__text {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  margin: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+}
