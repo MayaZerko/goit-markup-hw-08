@@ -28,6 +28,42 @@
                 </li>
                 </ul>
             </nav>
+<!--mobile menu-->
+            <button class="burger-btn" data-menu-open >
+                <svg class="burger-btn__icon">
+                    <use href="./image/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu" data-menu>
+                <button class="mobile__close-btn" data-menu-close>
+                    <svg class="mobile-close__icon">
+                        <use href="./image/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                
+                    <div class="mobile__menu-top">
+                        <ul>
+                            <li class="mobile__nav-item"><a href="./index.html" class="mobile__nav-link current">Студия</a></li>
+                            <li class="mobile__nav-item"><a href="./portfolio.html" class="mobile__nav-link">Портфолио</a></li>
+                            <li class="mobile__nav-item"><a href="" class="mobile__nav-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile__menu-bottom">
+                        <ul>
+                            <li class="mobile__address-item"><a href="tel:+380961111111" class="mobile__address-tel">+38 096 111 11 11</a></li>
+                            <li class="mobile__address-item"><a href="mailto:info@devstudio.com" class="mobile__address-mail link">info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="mobile__social">
+                            <li class="mobile__social-item"><a href="" class="mobile__social-link">Instagram</a></li>
+                            <li class="mobile__social-item"><a href="" class="mobile__social-link">Twitter</a></li>
+                            <li class="mobile__social-item"><a href="" class="mobile__social-link">Facebook</a></li>
+                            <li class="mobile__social-item"><a href="" class="mobile__social-link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                
+            </div>
+<!-- end mobile menu -->
             <ul class="navigation__element navigation__element-contact">
                 <li class="navigation__item">
                     <a href="mailto:info@devstudio.com" class="navigation__contacts">
@@ -44,7 +80,7 @@
             </ul>
         </div>
 
-    </header> 
+    </header>
 
     <!--unique content page-->
      <main>
@@ -57,7 +93,7 @@
         </section>
 
         <!--company ideals and princes-->
-        <section class="section company-ideal">
+        <!-- <section class="section company-ideal">
             <div class="container">
             <h2 class="title-hidden">Принципы компании</h2>
             <ul class="company-ideal__block">
@@ -98,10 +134,10 @@
                     <p class="company-ideal__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul></div>
-        </section>
+        </section> -->
 
         <!--what we're doing-->
-        <section class="section our-work">
+        <!-- <section class="section our-work">
             <div class="container">
             <h2 class="section__title our-work__title">Чем мы занимаемся</h2>
             <ul class="our-work__block">
@@ -125,10 +161,10 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--our team-->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team-list">
@@ -270,8 +306,10 @@
                 </li>
             </ul>
             </div>
-        </section>
-        <section class="clients-section">
+        </section> -->
+
+        <!--clients section-->
+        <!-- <section class="clients-section">
             <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
                 <ul class="clients__list">
@@ -320,12 +358,12 @@
                     
                 </ul>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
     <!--footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__box">
             <div class="footer-left">
             <a href="./index.html" class="logo">Web<span class="logo-light">Studio</span></a>
@@ -383,8 +421,8 @@
                 </form>
             </div>
         </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__btn" data-modal-close>
                 <svg class="modal__close-icon" width="18" height="18">
@@ -446,7 +484,10 @@
                 </form>
             
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    
+    
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

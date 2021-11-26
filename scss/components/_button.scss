@@ -14,17 +14,6 @@
   cursor: pointer;
 }
 
-.hero__button {
-  @extend .button;
-  padding: 10px 32px;
-  min-width: 200px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
-
 .portfolio__button {
   @extend .button;
   font-family: Roboto;
