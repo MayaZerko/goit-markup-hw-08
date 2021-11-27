@@ -1,25 +1,71 @@
 .portfolio {
-  @extend .section;
-  padding-top: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .portfolio-btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -8px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.portfolio__button {
+  @extend .button;
+
+  margin-top: 15px;
+  margin-left: 8px;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    &:not(:first-child) {
+      margin-right: 0;
+    }
+  }
 }
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  margin: -30px 0 0 -30px;
+  flex-direction: column;
+
+  margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: 0;
+  }
 }
 
 .portfolio__element {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex-basis: calc((100% - 90px) / 3);
-  margin: 30px 0 0 30px;
 
   &:hover,
   &:focus {
@@ -31,15 +77,26 @@
   &:hover .portfolio__img-text {
     transform: translateY(-100%);
   }
+
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio__card-wrap {
   position: relative;
   overflow: hidden;
-}
-
-.portfolio__img {
-  display: block;
 }
 
 .portfolio__img-text {
@@ -61,6 +118,14 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) {
+    height: 146px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: auto;
+  }
 }
 
 .portfolio-card__text {
