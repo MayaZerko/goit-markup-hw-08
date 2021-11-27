@@ -67,7 +67,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.section, .clients-section, .portfolio {
+.section, .portfolio {
   padding-bottom: 94px;
 }
 
@@ -186,7 +186,7 @@ img {
   color: var(--white-color);
 }
 
-.section__title, .portfolio-card__title, .clients__title {
+.section__title, .portfolio-card__title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -961,25 +961,45 @@ img {
 }
 
 .clients-section {
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .clients__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 .clients__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 .clients__item {
-  width: 170px;
+  margin-top: 30px;
+  margin-left: 30px;
   height: 92px;
+  flex-basis: calc((100% - 60px) / 2);
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .clients__link {
