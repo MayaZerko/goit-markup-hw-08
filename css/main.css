@@ -807,6 +807,12 @@ img {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 1199px) {
+  .our-work {
+    display: none;
+  }
+}
+
 .our-work__block {
   display: flex;
   justify-content: space-between;

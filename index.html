@@ -137,31 +137,77 @@
         </section> -->
 
         <!--what we're doing-->
-        <!-- <section class="section our-work">
+        <section class="section our-work">
             <div class="container">
             <h2 class="section__title our-work__title">Чем мы занимаемся</h2>
             <ul class="our-work__block">
                 <li class="our-work__item">
-                    <a href=""><img src="./image/computer.jpg" alt="Компьютер" width="370"></a>
+                    <a href="">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./image/our-work/comp.webp    1x,
+                            ./image/our-work/comp@2x.webp 2x 
+                            "
+                            type="image/webp"
+                            >
+
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./image/our-work/comp.jpg    1x,
+                            ./image/our-work/comp@2x.jpg 2x 
+                            ">
+                            <img src="#" alt="Компьютер">
+                        </picture>
+                        
+                    </a>
                     
                         <p class="our-work__text">Десктопные приложения</p>
                    
                 </li>
                 <li class="our-work__item">
-                    <a href=""> <img src="./image/mobile.jpg" alt="Мобильные устройства" width="370"></a>
+                    <a href="">
+                        <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                            ./image/our-work/tablet.webp    1x,
+                            ./image/our-work/tablet@2x.webp 2x 
+                            " type="image/webp">
+                    
+                        <source media="(min-width: 1200px)" srcset="
+                            ./image/our-work/tablet.jpg    1x,
+                            ./image/our-work/tablet@2x.jpg 2x 
+                            ">
+                        <img src="#" alt="Мобильные устройства">
+                    </picture>
+                </a>
         
                         <p class="our-work__text">Мобильные приложения</p>
                     
                 </li>
                 <li class="our-work__item">
-                    <a href=""><img src="./image/tablet.jpg" alt="Планшеты" width="370"></a>
+                    <a href="">
+                        <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                            ./image/our-work/mob.webp    1x,
+                            ./image/our-work/mob@2x.webp 2x 
+                             " type="image/webp">
+                    
+                        <source media="(min-width: 1200px)" srcset="
+                            ./image/our-work/mob.jpg    1x,
+                            ./image/our-work/mob@2x.jpg 2x 
+                            ">
+                        <img src="#" alt="Планшеты">
+                    </picture>
+                </a>
                     
                         <p class="our-work__text">Дизайнерские решения</p>
                     
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
 
         <!--our team-->
         <!-- <section class="team section">
