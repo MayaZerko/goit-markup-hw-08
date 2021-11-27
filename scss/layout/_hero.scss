@@ -17,6 +17,16 @@
   height: 400px;
   max-width: 480px;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/hero/hero-mob@x2.jpg);
+  }
+
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -24,6 +34,16 @@
       ),
       url(../image/hero/hero-tab.jpg);
     max-width: 768px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../image/hero/hero-tab@x2-min.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -36,6 +56,16 @@
       url(../image/hero/hero-desk.jpg);
     max-width: 1600px;
     height: 600px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../image/hero/hero-desk@x2.jpg);
+    }
   }
 }
 
