@@ -1,17 +1,39 @@
 .company-ideal {
-  padding-top: 94px;
+  margin-top: 60px;
 }
 
 .company-ideal__block {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .company-ideal__item {
-  width: 270px;
-  margin-right: 30px;
+  margin-top: 30px;
 
-  &:last-child {
-    margin-right: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-top: 30px;
+    }
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
@@ -20,7 +42,7 @@
   background-color: #f5f4fa;
   text-align: center;
 
-  width: 270px;
+  width: auto;
   height: 120px;
 
   margin-bottom: 30px;
@@ -37,11 +59,19 @@
   font-weight: 700px;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .company-ideal__text {
   margin: 0;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
