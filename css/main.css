@@ -509,7 +509,7 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -517,6 +517,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__close-icon {
@@ -626,8 +632,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   cursor: pointer;
@@ -657,6 +663,13 @@ img {
   outline: 2px solid var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 .modal-form__checkbox-link {
   color: var(--accent-color);
 }
@@ -670,7 +683,8 @@ img {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  margin-left: 124px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 200px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -9,6 +9,10 @@
   transform: translate(-50%, -50%);
 
   padding: 40px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal__close-icon {
