@@ -14,28 +14,67 @@
     <!--header-->
     <header class="border-bottom">
         <div class="container navigation">
-            <nav class="navigation__element navigation__element-main">
+            <nav class="navigation__element-main">
                 <a href="./index.html" class="logo">Web<span class="logo-dark">Studio</span></a>
                 <ul class="navigation__menu">
                     <li class="navigation__item">
                         <a href="./index.html" class="navigation__link">Студия</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./portfolio.html" class="navigation__link current">Портфолио</a>
+                        <a href="./portfolio.html" class="navigation__link  current">Портфолио</a>
                     </li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Контакты</a>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="navigation__element navigation__element-contact">
-                <li class="navigation__item">
-                    <a href="mailto:info@devstudio.com" class="navigation__contacts">
+            <!--mobile menu-->
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./image/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+    
+            <div class="mobile-menu" data-menu>
+                <button class="mobile__close-btn" data-menu-close>
+                    <svg class="mobile-close__icon">
+                        <use href="./image/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+    
+                <div class="mobile__menu-top">
+                    <ul>
+                        <li class="mobile__nav-item"><a href="./index.html" class="mobile__nav-link">Студия</a></li>
+                        <li class="mobile__nav-item"><a href="./portfolio.html" class="mobile__nav-link current">Портфолио</a></li>
+                        <li class="mobile__nav-item"><a href="" class="mobile__nav-link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mobile__menu-bottom">
+                    <ul>
+                        <li class="mobile__address-item"><a href="tel:+380961111111" class="mobile__address-tel">+38 096 111
+                                11 11</a></li>
+                        <li class="mobile__address-item"><a href="mailto:info@devstudio.com"
+                                class="mobile__address-mail link">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile__social">
+                        <li class="mobile__social-item"><a href="" class="mobile__social-link">Instagram</a></li>
+                        <li class="mobile__social-item"><a href="" class="mobile__social-link">Twitter</a></li>
+                        <li class="mobile__social-item"><a href="" class="mobile__social-link">Facebook</a></li>
+                        <li class="mobile__social-item"><a href="" class="mobile__social-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+            <!-- end mobile menu -->
+            <ul class="navigation__element-contact">
+                <li class="navigation__item-contact">
+                    <a href="mailto:info@devstudio.com" class="navigation__header-contacts">
                         <svg class="navigation__icon navigation__mail" width="16px" height="12px">
                             <use href="./image/sprite.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="navigation__item"><a href="tel:+380961111111" class="navigation__contacts">
+                <li class="navigation__item-contact"><a href="tel:+380961111111" class="navigation__header-contacts">
                         <svg class="navigation__icon navigation__tel" width="10px" height="16px">
                             <use href="./image/sprite.svg#icon-smartphone"></use>
                         </svg>
