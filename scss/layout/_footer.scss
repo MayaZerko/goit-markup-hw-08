@@ -3,6 +3,10 @@
   background-color: var(--dark-backgroud-color);
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 .footer__box {
@@ -14,6 +18,7 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    text-align: left;
   }
 }
 
@@ -80,6 +85,10 @@
   margin-bottom: 20px;
 
   color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__social {

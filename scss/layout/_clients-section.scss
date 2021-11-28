@@ -1,6 +1,11 @@
 .clients-section {
   padding-bottom: 60px;
   padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    padding-top: 0;
+  }
 }
 
 .clients__title {
@@ -11,6 +16,11 @@
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .clients__list {
